@@ -2,6 +2,7 @@ package framework;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -21,6 +22,13 @@ public class LoginPageTests extends base{
 		lpObj.getUname().sendKeys(uname);
 		lpObj.getPass().sendKeys(upass);
 		lpObj.getLoginBtn().click();
+		
+		
+		HomePageObject hpObj = new HomePageObject(driver);
+	
+		Assert.assertEquals(hpObj.getWelcomeTxt().getText(), "Welcome To Manager's Page of Guru99 Bank");
+		
+
 		
 	}
 	

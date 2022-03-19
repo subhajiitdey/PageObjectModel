@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-18T22:15:14 IST" name="Default suite" finished-at="2022-03-18T22:15:42 IST" duration-ms="27451">
+  <suite started-at="2022-03-19T20:20:40 IST" name="Default suite" finished-at="2022-03-19T20:21:06 IST" duration-ms="25652">
     <groups>
     </groups>
-    <test started-at="2022-03-18T22:15:14 IST" name="Default test" finished-at="2022-03-18T22:15:42 IST" duration-ms="27451">
+    <test started-at="2022-03-19T20:20:40 IST" name="Default test" finished-at="2022-03-19T20:21:06 IST" duration-ms="25652">
       <class name="framework.LoginPageTests">
-        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:0, instance:framework.LoginPageTests@32eff876]" started-at="2022-03-18T22:15:14 IST" name="loginApp" data-provider="getLoginData" finished-at="2022-03-18T22:15:31 IST" duration-ms="16544" status="PASS">
+        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:0, instance:framework.LoginPageTests@32eff876]" started-at="2022-03-19T20:20:40 IST" name="loginApp" data-provider="getLoginData" finished-at="2022-03-19T20:20:53 IST" duration-ms="13158" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:0, instance:framework.LoginPageTests@32eff876]" started-at="2022-03-18T22:15:31 IST" name="loginApp" data-provider="getLoginData" finished-at="2022-03-18T22:15:42 IST" duration-ms="10863" status="PASS">
+        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:0, instance:framework.LoginPageTests@32eff876]" started-at="2022-03-19T20:20:53 IST" name="loginApp" data-provider="getLoginData" finished-at="2022-03-19T20:21:06 IST" duration-ms="12438" status="PASS">
           <params>
             <param index="0">
               <value>
