@@ -4,19 +4,26 @@ import java.io.IOException;
 
 
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import utilities.base;
 
 public class HomePageTests extends base{
+	
+	
+	@BeforeTest
+	public void beforeTest() throws IOException
+	{
+		driver = intializeDriver();
+		driver.get(prop.getProperty("url"));
+	}
 
 	@Test(dataProvider = "getLoginData")
 	public void addNewCusomter(String uname, String upass) throws IOException
 	{
-		driver = intializeDriver();
-		driver.get(prop.getProperty("url"));
-		
 		
 		LoginPageObject lpObj = new LoginPageObject(driver);
 		lpObj.getUname().sendKeys(uname);
@@ -45,6 +52,15 @@ public class HomePageTests extends base{
 		
 		return obj;
 		
+	}
+	
+	@AfterTest
+	public void tearDown()
+	{
+		if(driver!=null)
+		{
+		driver.quit();
+		}
 	}
 	
 }

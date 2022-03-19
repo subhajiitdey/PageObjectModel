@@ -3,6 +3,8 @@ package framework;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -10,6 +12,14 @@ import org.testng.annotations.Test;
 import utilities.base;
 
 public class LoginPageTests extends base{
+	
+	
+	@BeforeTest
+	public void beforeTest() throws IOException
+	{
+		driver = intializeDriver();
+		driver.get(prop.getProperty("url"));
+	}
 
 	
 	@Test(dataProvider="getLoginData")
@@ -50,4 +60,15 @@ public class LoginPageTests extends base{
 		
 	}
 
+	
+	@AfterTest
+	public void tearDown()
+	{
+		if(driver!=null)
+		{
+		driver.quit();
+		}
+	}
+	
+	
 }
