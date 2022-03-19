@@ -12,11 +12,12 @@ public class base {
 	
 	public WebDriver driver;
 	public String browsername;
+	public Properties prop;
 	
 	public WebDriver intializeDriver() throws IOException
 	{
 		
-		Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream fis = new FileInputStream("F:\\Cloned Eclipse Workspace\\Framework\\src\\main\\java\\utilities\\data.properties");
 		prop.load(fis);
 		

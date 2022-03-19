@@ -16,7 +16,7 @@ public class LoginPageTests extends base{
 	public void loginApp(String uname, String upass) throws IOException
 	{
 		driver = intializeDriver();
-		driver.get("https://www.demo.guru99.com/V4/");
+		driver.get(prop.getProperty("url"));
 		
 		LoginPageObject lpObj = new LoginPageObject(driver);
 		lpObj.getUname().sendKeys(uname);

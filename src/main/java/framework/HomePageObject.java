@@ -9,6 +9,10 @@ public class HomePageObject {
 	public WebDriver driverHP;
 	
 	By welcomeText = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/marquee");
+	By addCustomer = By.xpath("/html/body/div[3]/div/ul/li[2]/a");
+	By editCustomer = By.xpath("/html/body/div[3]/div/ul/li[3]/a");
+	By deleteCustomer = By.xpath("/html/body/div[3]/div/ul/li[4]/a");
+	
 	
 	public HomePageObject(WebDriver driver)
 	{
@@ -21,5 +25,20 @@ public class HomePageObject {
 		return driverHP.findElement(welcomeText);
 	}
 	
-
+	public WebElement getAddCusomter()
+	{
+		return driverHP.findElement(addCustomer);
+	}
+	
+	public WebElement getEditCustomer()
+	{
+		return driverHP.findElement(editCustomer);
+	}
+	
+	public WebElement getDeleteCustomer()
+	{
+		return driverHP.findElement(deleteCustomer);
+	}
+	
+	
 }
