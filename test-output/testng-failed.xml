@@ -8,8 +8,8 @@
     <classes>
       <class name="framework.HomePageTests">
         <methods>
-          <include name="addNewCusomter" invocation-numbers="0"/>
           <include name="beforeTest"/>
+          <include name="addNewCusomter" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- framework.HomePageTests -->
