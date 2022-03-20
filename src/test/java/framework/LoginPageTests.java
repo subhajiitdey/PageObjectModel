@@ -2,6 +2,7 @@ package framework;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -13,6 +14,7 @@ import utilities.base;
 
 public class LoginPageTests extends base{
 	
+	public WebDriver driver;
 	
 	@BeforeTest
 	public void beforeTest() throws IOException
