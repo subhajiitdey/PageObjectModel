@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.129 s - in TestSuite
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.401 s <<< FAILURE! - in TestSuite
+framework.HomePageTests.addNewCusomter[mngr391577, bEjebydaa](1)  Time elapsed: 2.237 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=99.0.4844.82): User or Password is not valid
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SUBHAJIT_PC', ip: '192.168.1.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [feb4c2afe1d15139fd2cc3d4bb9bf2b0, findElement {using=xpath, value=/html/body/div[3]/div/ul/li[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\subha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49852/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: feb4c2afe1d15139fd2cc3d4bb9bf2b0
+	at framework.HomePageTests.addNewCusomter(HomePageTests.java:37)
+

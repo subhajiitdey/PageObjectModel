@@ -34,7 +34,7 @@ public class HomePageTests extends base{
 		
 		HomePageObject hpObj = new HomePageObject(driver);
 		
-		Assert.assertTrue(hpObj.getAddCusomter().isDisplayed());
+		Assert.assertEquals(hpObj.getWelcomeTxt().getText(), "Welcome To Manager's Page of Guru99 Bank");
 		
 		//Click on Add Customer and Add customer logic will be added later
 		
@@ -48,7 +48,7 @@ public class HomePageTests extends base{
 		Object[][] obj = new Object[1][2];
 		
 		obj[0][0]="mngr391577";
-		obj[0][1]="bEjebydfg";
+		obj[0][1]="bEjebyd";
 		
 		
 		return obj;
@@ -60,7 +60,7 @@ public class HomePageTests extends base{
 	{
 		if(driver!=null)
 		{
-		driver.quit();
+		driver.close();
 		}
 	}
 	

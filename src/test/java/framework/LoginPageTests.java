@@ -27,8 +27,6 @@ public class LoginPageTests extends base{
 	@Test(dataProvider="getLoginData")
 	public void loginApp(String uname, String upass) throws IOException
 	{
-		driver = intializeDriver();
-		driver.get(prop.getProperty("url"));
 		
 		LoginPageObject lpObj = new LoginPageObject(driver);
 		lpObj.getUname().sendKeys(uname);
@@ -48,14 +46,12 @@ public class LoginPageTests extends base{
 	public Object[][] getLoginData()
 	{
 		
-		Object[][] obj = new Object[2][2];
+		Object[][] obj = new Object[1][2];
 		
 		obj[0][0]="mngr391577";
 		obj[0][1]="bEjebyd";
 		
-		
-		obj[1][0]="mngr391577";
-		obj[1][1]="bEjebyd";
+	
 		
 		
 		return obj;
@@ -68,7 +64,7 @@ public class LoginPageTests extends base{
 	{
 		if(driver!=null)
 		{
-		driver.quit();
+		driver.close();
 		}
 	}
 	
