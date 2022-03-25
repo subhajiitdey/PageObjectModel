@@ -10,6 +10,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class base {
 	
@@ -36,11 +38,13 @@ public class base {
 		}
 		else if(browsername.equals("firefox"))
 		{
-			
+			System.setProperty("webdriver.gecko.driver","F:\\Cloned Eclipse Workspace\\Framework\\resources\\drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
 		}
-		else if(browsername.equals("IE"))
+		else if(browsername.equals("edge"))
 		{
-			
+			System.setProperty("webdriver.edge.driver","F:\\Cloned Eclipse Workspace\\Framework\\resources\\drivers\\msedgedriver.exe");
+			driver = new EdgeDriver();
 		}
 		
 		
